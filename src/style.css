@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    text-align: center;
+    display: flex;
+    -webkit-box-shadow: 0px 4px 9px -2px rgba(34, 60, 80, 0.23);
+    -moz-box-shadow: 0px 4px 9px -2px rgba(34, 60, 80, 0.23);
+    box-shadow: 0px 4px 9px -2px rgba(34, 60, 80, 0.23);
+    margin-bottom: 10px;
+    gap:50px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: end;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.titleBTN{
+    font-size: 20px;
+}
+.active{
+    color: black;
+}
+.grid{
+    gap:10px;
+    display: grid;
+    grid-template-columns:repeat(5,270px);
+    justify-content: center;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    font-size:17px ;
+    flex: 1;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid;
+    font-size: 17px;
+    transition: 1s;
+    background-color: white;
+    font-weight:600;
+}
+.btn:active{
+    animation: tilt-shaking 0.07s;
+}
+.btn:hover{
+    transform: scale(102%)
+}
+.grid-img{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px 300px 300px 300px;
+    justify-content: center;
+    gap:5px;
+}
+.img{
+    display: block;
+}
+.counted{
+    position: relative;
+    display: flex;
+    gap: 8px;
+}
+.count{
+    color: rgb(0, 0, 0);
+}
+
+.inputs{
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+    
+}
+.Forms{
+    padding-left: 300px;
+    
+}
+@keyframes tilt-shaking {
+    0% { transform: translate(0); }
+    50% { transform: translateY(7px); }
+    100% { transform: translateY(-7px); }
+
+}
+.exit{
+    color:rgb(6, 6, 6);
+    font-weight: 800;
+}
+.container{
+    padding:0px 300px 0px 300px;
+}
+.btnICON{
+    width: 40px;
+    border-radius: 50px;
+}
+.btnICON:active{
+    animation: tilt-shaking 0.07s;
+    margin-bottom: 5px;
+}
+.cart-block{
+    padding: 15px 5px 15px 5px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.titleBTN{
+    display: flex;
+    flex-direction: row;
+    gap:7px 
+}
+
+
